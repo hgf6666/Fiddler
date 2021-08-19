@@ -1,0 +1,36 @@
+删除数据库：drop/delete   databases  数据库名      drop是删除数据库的，而delete是删除表中的内容
+
+修改数据库：alter  databases  数据库名
+
+对表重命名：alter  table  表名  rename 新表名
+
+增加字段：alter  table    表名  add   字段名  字段类型
+
+删除字段：alter  table    表名  drop   字段名
+
+修改列：alter   table   表名   modify  column  列名  类型 /alter  table  表名  change  原列名  新列名  类型
+
+添加主键：alter  table  表名  add  primary  key(列名)
+
+删除主键：alter  table   表名  drop  primary  key
+
+添加外键：alter  table  从表  add   constraint  外键名称   foreign  key（字段名）references 主表（主键）
+
+删除外键：alter  table  表名  drop foreign  key  外键名称
+
+向表中插入数据：insert   into   表名  values（"数据1"，"数据2"，"数据3"）
+
+更新满足条件的字段数据：update  表名  set  字段1=“”,字段2=""   where 条件
+
+删除满足条件的数据：delete  from  表名  where  条件
+
+查询语句
+   语法格式：
+        select 字段列表/ *   from   表名
+        where  搜索条件
+        group  by  分组字段  
+        having 分组条件
+        order by  排序字段  排序规则
+        limit 分页参数
+
+
