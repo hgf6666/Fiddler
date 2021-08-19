@@ -1,0 +1,17 @@
+uiautomator2使用教程
+ 要求：
+        python  3.6+
+        android  4.4+
+介绍：
+        uiautomator2是一个可以使用python对Android设备进行UI自动化的库，可以获取屏幕上任意一个APP的一个控件属性，并对其进行        任意操作
+初始化：
+       部署相关的守护进程
+       电脑连接上一个手机或多个手机，确保adb已经添加到环境变量中，执行下面的命令会自动安装本库所需要的设备端程序
+        python    -m   uiautomator2    init
+        安装完成，设备上会多一个uiautomator的应用
+配置手机设备参数
+       （1）有两种方法，一种是通过wifi，另一种是通过usb数据线将手机连接电脑
+       （2）wifi连接更方便一点，需要保持pc和手机使用的一个wifi，查看手机连接wifi的ip地址
+查看app控件
+         安装  pip   install  --pre  --upgrade  weditor
+         使用   python  -m  weditor
